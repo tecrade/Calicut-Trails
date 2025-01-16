@@ -1,0 +1,128 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Gemini Chatbot</title>
+    
+</head>
+<body>
+    <h1>Simple Gemini Chatbot</h1>
+    <div id="chat-container"></div>
+    <div>
+        <input type="text" id="message-input" placeholder="Type your message...">
+        <button id="send-button">Send</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Planner</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="input-section">
+            <h1>Trip Planner</h1>
+            <form id="tripForm">
+                <input type="text" id="city" placeholder="Enter city" required>
+                <input type="number" id="duration" placeholder="Number of days" required>
+                <input type="text" id="interests" placeholder="Your interests (e.g., history, food)" required>
+                <button type="submit">Plan My Trip</button>
+            </form>
+        </div>
+
+        <div class="content-section">
+            <div id="map"></div>
+            <div id="itinerary"></div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Planner</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="input-section">
+            <h1>Trip Planner</h1>
+            <form id="tripForm">
+                <input type="text" id="city" placeholder="Enter city" required>
+                <button type="button" id="useGeolocation">Use My Current Location</button>
+
+                <input type="number" id="duration" placeholder="Number of days" required>
+                
+                <select id="travelGroup" required>
+                    <option value="">Select travel group</option>
+                    <option value="family">Family</option>
+                    <option value="friends">Friends</option>
+                    <option value="couple">Couple</option>
+                    <option value="solo">Solo</option>
+                </select>
+
+                <select id="budget" required>
+                    <option value="">Select budget range</option>
+                    <option value="budget">Budget (₹under 2000/day)</option>
+                    <option value="moderate">Moderate (₹ 2000 - 10000/day)</option>
+                    <option value="luxury">Luxury (₹10000+/day)</option>
+                </select>
+
+                <select id="foodPreference" required>
+                    <option value="">Food preference</option>
+                    <option value="non-vegetarian">Non-vegetarian</option>
+                    <option value="vegetarian">Vegetarian</option>
+                </select>
+
+                <input type="text" id="interests" placeholder="Your interests (e.g., history, food)" required>
+
+                <select id="accommodation" required>
+                    <option value="">Accommodation preference</option>
+                    <option value="no-need">No accommodation needed</option>
+                    <option value="hotel">Hotel</option>
+                    <option value="apartment">Apartment</option>
+                    <option value="resort">Resort</option>
+                </select>
+
+                <select id="transportMode" required>
+                    <option value="">Preferred transport</option>
+                    <option value="public">Public Transport</option>
+                    <option value="car">Car</option>
+                    <option value="walking">Walking</option>
+                    <option value="mixed">Mixed</option>
+                </select>
+
+                <button type="submit">Plan My Trip</button>
+            </form>
+        </div>
+        
+        <div class="content-section">
+            <div id="map"></div>
+            <div class="timeline">Timeline</div>
+            <div id="itinerary"></div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
