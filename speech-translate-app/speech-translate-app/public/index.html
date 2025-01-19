@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice to Malayalam Translator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ 
+    <div class="container">
+        <h1>Voice to Malayalam Translator</h1>
+        
+        <div class="input-section">
+            <button id="startRecording" class="button">
+                Start Recording
+            </button>
+            <button id="stopRecording" class="button" disabled>
+                Stop Recording
+            </button>
+        </div>
+
+        <div class="text-section">
+            <div class="text-container">
+                <h3>Speak</h3>
+                <textarea id="englishText" readonly></textarea>
+            </div>
+            
+            <div class="text-container">
+                <h3>Malayalam Translation</h3>
+                <textarea id="malayalamText" readonly></textarea>
+            </div>
+        </div>
+
+        <div class="audio-section">
+            <button id="translateButton" class="button">Translate</button>
+            <audio id="audioPlayer" controls style="display: none;">
+                <source id="audioSource" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <div id="status" class="status"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
